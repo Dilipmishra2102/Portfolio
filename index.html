@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilip Mishra's Portfolio</title>
+
+    <!-- Font Awesome Free CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+
+Basic Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  overflow-x: hidden;
+  /* width: 100vw; */
+  /* background-image: url("../images/photo37.jpg");
+  margin: 0;
+  position: relative;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat; */
+ 
+  
+margin: 0;
+  padding: 0;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 90px;
+}
+
+
+
+.content-main{
+  /* max-width: 80rem; */
+ 
+  margin: 0px auto;
+}
+.back-img{
+  /* height: 700px; */
+  background-image: url("../images/photo37.jpg");
+  background-size:cover;
+  height: 768px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  /* position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: -1; */
+  
+
+  
+ 
+  
+
+}
+@media (max-width:768px){
+  .back-img{
+    background-size: cover;
+    
+    background-position: center;
+    
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 10px 0px;
+  margin: 0px auto;
+  background-color: transparent;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  transition: all 0.3s ease;
+  
+  
+
+}
+
+
+.navbar.scrolled {
+  background-color: tomato; /* or any color */
+}
+
+
+
+
+.navbar-detail{
+  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  margin: 0px auto;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  
+}
+
+.nav-links li a:hover {
+  background-color:tomato;
+  border-radius: 4px;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color:white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color:tomato;
+    flex-direction: column;
+    margin-right: 13px;
+    width: 90%;
+    padding: 10px;
+    display: none;
+    
+  }
+  
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+.nav-links li a:hover{
+  background-color: black;
+}
+
+@media (min-width: 1024px){
+  .nav-links li a:hover{
+  background-color: tomato;
+}
+}
+
+@media(max-width: 600px){
+  .back-img{
+    background-size: cover;
+    height: 700px;
+  }
+}
+
+
+.front-desk{
+    margin: 0px auto;
+    width: 98%;
+    
+    
+   
+
+}
+
+
+.container{
+  
+  float: left;
+  
+
+}
+
+
+.text-container{
+  
+  margin-left: 15px;
+  margin-top: 50%;
+}
+@media (min-width: 1024px){
+  .text-container{
+    margin-top: 47%;
+    
+  }
+
+}
+
+.cv{
+  text-decoration: none;
+  background-color:tomato;
+  padding: 12px 28px;
+  color: white;
+  border-radius: 40px;
+  
+ 
+  
+}
+.cv:hover{
+  background-color:black;
+}
+.text1{
+  font-size: 30px;
+  color: white;
+  font-weight: 525;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ .text2 {
+    font-size: 65px; /* default for mobile */
+    text-align: left;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    
+  }
+  .text3{
+    font-size: 50px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  @media (max-width: 600px) {
+    .text2 {
+      font-size: 3rem;
+      
+    }
+    .text1,.text3{
+      font-size: 2.5rem;
+    }
+
+ 
+  }
+
+  @media (min-width: 1000px) {
+    h1 {
+      font-size: 4rem;
+      margin-left: 10px;
+      
+    }
+    .text-container{
+      margin-left: 0px;
+      
+    }
+  }
+
+.content-about{
+  
+  flex-wrap: block;
+  
+  width: 100%;
+  margin-top: 100px;
+  height: 600px;
+  /* background-color: red; */
+  
+}
+.content-about h2{
+  font-size: 36px;
+}
+.text-about{
+  display: flex;
+  
+  
+}
+
+
+.about-img{
+  
+  margin-top: 10px;
+  background-color:white;
+  box-shadow: 0px 0px 7px lightgray;
+  border-radius: 40px;
+  width: 400px;
+  height: 400px;
+  margin: 0px auto;
+  margin-left: 20px;
+}
+
+.text-about{
+width: 100%;
+ 
+ float: right;
+margin-top: 10px;
+ 
+}
+.about-paragraph{
+  width: 90%;
+  /* margin-right: 40px;
+  margin-top: 90px; */
+  margin: 50px auto;
+
+}
+
+.img-ab{
+  max-width: 100%;
+  height: auto;
+ 
+}
+@media (max-width: 600px) {
+  .text-about
+ {
+    width: 98%;
+   
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+  }
+  .about-img{
+    margin-top: 20px;
+    
+  }
+  .img-ab{
+    height: 350px;
+    width: 350px;
+    margin-top: 6%;
+  }
+
+}
+@media(min-width:1024px){
+  .img-ab{
+  height: 350px;
+  width: 350px;
+  margin-top: 6%;
+  margin-left: 15px;
+}
+.about-paragraph{
+  width: 55%;
+}
+}
+
+
+
+.text-me{
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 18px; 
+  font-family: "Ubuntu";
+  font-weight:400;
+
+}
+.about-paragraph h3{
+  font-family: "Ubuntu";
+  font-weight:600;
+  font-size: 20px; 
+
+  
+}
+
+
+
+
+
+
+.skills-content{
+  margin-top: 100px;
+  /* background-image: url("images/photo40.jpg");
+  background-size: cover; */
+  background-image: url(images/photo41.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  background-attachment: fixed;
+  
+  
+  
+}
+
+.skills-content h2{
+  text-align: center;
+  
+  font-size: 46px;
+}
+.skills-content2{
+  display: flex;
+  gap: 40px;
+}
+.skills-paragraph{
+  width: 100%;
+}
+
+.skills-mid{
+  width: 100%;
+}
+
+.skills-main{
+  width: 100%;
+  background-color: #ddd;
+  
+}
+.skills-con{
+  width: 90%;
+  margin: 20px auto;
+}
+.skills-con p{
+  text-align: left;
+}
+
+.skills{
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.python{
+  width: 80%;
+  background-color:darkslateblue;
+}
+.django{
+  width: 60%;
+  background-color: #04aa6d;
+}
+.sql{
+  width: 80%;
+  background-color: #E498D4;
+}
+.html{
+  width: 80%;
+  background-color: tomato;
+}
+.css{
+  width: 70%;
+  background-color:#00e6e6;
+}
+
+
+
+@media(max-width: 600px){
+  .skills-mid{
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .skills{
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .content-about{
+    margin-bottom: 500px;
+  }
+}
+
+
+.project{
+  
+  width: 90%;
+  margin: 150px auto;
+ 
+}
+
+.project h1{
+  text-align: center;
+  
+
+}
+.project2{
+  display: flex;
+  gap: 20px;
+  
+  margin: 0px auto;
+  
+}
+@media (min-width: 1024px){
+  .project2{
+    
+    margin: 4%;
+    
+  }
+}
+.card1{
+  display: flex;
+  gap: 20px;
+}
+.card2{
+  display: flex;
+  gap: 20px;
+}
+
+.project2 a img{
+  
+  width: 100%;
+  
+  border: 5px solid tomato;
+}
+
+
+.card{
+  height: 350px;
+  width: 250px;
+  /* text-align: center; */
+  background-color: white;
+  
+}
+
+.card img{
+
+  width: 80%;
+  height: 200px;
+  margin: 20px 20px 0px 22px;
+  
+}
+
+
+.project2 h4,p{
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  .project2{
+    display: block;
+  }
+  .card{
+    margin: 0px auto;
+    height: 300px;
+  }
+  .card2{
+    margin-top: 40px;
+  }
+  .project{
+    width: 90%;
+  }
+  .card img{
+    height: 150px;
+  }
+}
+
+
+.contact-us{
+  display:flex;
+  margin-top: 100px;
+  background-color:tomato;
+  border-radius: 30px;
+  
+  
+}
+
+.contact-us h2{
+  font-size: 26px;
+  
+  
+}
+
+.contact-us1{
+  
+  width: 100%;
+  
+  margin-bottom: 40px;
+  
+
+}
+.contact-us1 p{
+  text-align: left;
+  font-size: 18px;
+  font-family: "Ubuntu";
+  font-weight:400;
+  line-height: 1.5;
+
+  
+}
+
+.contact-us3{
+  margin-top: 50px;
+  display: flex;
+  gap: 60px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+
+
+.contact-us2{
+  
+  width: 100%;
+  margin-bottom: 40px;
+  
+}
+
+
+.input-contact input{
+  height: 40px;
+  width: 210px;
+  border: none;
+  border-radius: 40px;
+  
+  padding-left: 20px;
+  
+  
+}
+
+
+
+.input-contact textarea{
+  border-radius: 30px; 
+  text-align: left; 
+  width: 80%; 
+  height:260px ;
+  padding-left: 20px;
+  padding-top: 20px;
+  
+
+}
+
+.input-contact .btn-c1{
+  padding: 12px 50px; 
+  border-radius: 40px; 
+  border: none;
+  
+
+}
+
+.btn-c1:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+@media (max-width: 600px){
+  .contact-us2 .input-contact input{
+    width: 150px;
+
+  }
+  .contact-us .btn-c1{
+    margin-bottom: 40px;
+  }
+  .contact-us3{
+    display: block;
+  }
+
+
+
+
+
+ 
+ .skills-content2{
+    display: block;
+    text-align: center;
+    
+    
+  }
+  .skills-content{
+    margin-top: 350px;
+    
+  }
+}
+
+
+@media (min-width: 1024px){
+  .contact-us{
+    display: flex;
+  }
+}
+.footer{
+  display: block;
+  
+  color: white;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  
+  
+}
+
+.footer-f1{
+
+  margin: 100px auto;
+  width: 25%;
+  
+  
+}
+
+.footer-h3{
+  text-align: center;
+}
+
+
+
+.footer-content{
+  display: flex;
+  margin: 0px auto;
+}
+
+
+@media (max-width: 768px){
+  .footer-content{
+    
+    margin: 0px auto;
+    display: block;
+  }
+  .footer-f1{
+    width: 90%;
+  }
+  .footer-about{
+    
+    margin: 0px auto;
+  }
+
+  .footer-f1{
+    margin: 0px auto;
+  }
+ .copyrights p{
+  font-size: 14px;
+ }
+
+ .footer-f2{
+  text-align: left;
+ }
+
+
+}
+
+@media (min-width: 1024px){
+  .footer{
+    display: flex;
+    
+  }
+  .footer-f1{
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+.footer-f1 a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px;
+  
+
+}
+.footer-f1 .footer-about{
+  text-align: justify;
+  
+  
+}
+.footer-f1 input{
+  height: 40px;
+  width: 300px;
+  border-radius: 40px;
+  padding-left: 25px;
+}
+
+.footer-f1 button{
+  
+  border-radius: 40px;
+  text-align: left;
+  padding: 12px 30px;
+  margin-bottom: 100px;
+  margin-top: 10px;
+  background-color: tomato;
+  color: white;
+}
+
+.footer-f1 button:hover{
+  background-color: black;
+  border: 1px solid tomato;
+}
+
+
+
+
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+  <div class="back-img">
+
+   <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-detail">
+    <div class="logo">DILIP MISHRA</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-icon"  onclick="toggleMenu()">☰</div>
+    </div>
+   </nav>
+
+
+
+
+   
+
+    <div class="front-desk" style="max-width: 80rem;">
+
+    
+    <div class="container">
+      <div class="text-container">
+       <div class="text1">Hi,</div><div class="text2"> I' am <span style="color:tomato">Dilip Mishra</span> </div><div class="text3">Software Developer</div><br><br>
+       <a href="assets/cv.pdf" class="cv" style="font-size: 16px;">Download CV</a>
+       <a href="#contact" class="cv" style="font-size: 16px; margin-left: 10px;">Contact Me</a>
+      </div>
+    </div>
+      
+    </div>
+
+  </div>
+
+
+
+    <div class="cotent-mid" style="max-width:80rem ; margin: 0px auto;">
+    <div class="content-about" id="about">
+     
+         
+         <h2 style="text-align: center; font-size: 46px;">About <span style="color:tomato;"> me</span></h2>
+
+         <div class="text-about">
+         
+         <div class="about-img">
+         <img src="images/photo43.jpeg" alt="" class="img-ab">
+      
+         </div>
+         <div class="about-paragraph">
+          <h3>I am Dilip Mishra and I am Software Developer</h3>
+         <p class="text-me">Hi, I’m a software developer who loves turning ideas into functional, real-world applications. I specialize in Python and Django for back-end development and enjoy crafting clean, responsive front-end designs with HTML and CSS. I’m also confident working with SQL to design and manage efficient databases.
+
+What drives me is solving problems through code and continuously learning new technologies to improve my craft. I believe in writing clean, maintainable code and building applications that are both useful and user-friendly. Whether working independently or as part of a team, I bring focus, curiosity, and a passion for building things that matter.</p><br>
+          <a href="#contact" class="cv" style="font-size: 16px;">Contact Me</a>
+          <a href="#skills" class="cv" style="font-size: 16px;">Read more</a>
+          </div>
+          
+
+         </div>
+      
+    </div>
+
+    <div class="skills-content" id="skills">
+      <h2 style="color:tomato; padding-top: 50px;">My <span style="color: white;">Skills</span> </h2>
+
+
+
+
+
+    <div class="skills-content2">
+
+      <div class="skills-paragraph">
+        <h3 style=" width:90%; margin: 0px auto; font-family: Ubuntu sans-serif; font-weight:600">My Creative skills and experiences</h3><br>
+      <p style="width: 90%; margin: 0px auto; text-align: justify; font-size: 18px; font-family: Ubuntu sans-serif; font-weight:400; line-height: 1.5;" >I’m a software developer with a passion for building efficient, user-focused web applications. With a strong foundation in Python and Django, I specialize in back-end development while also bringing solid front-end skills with HTML and CSS to create responsive and accessible user interfaces. I enjoy working with databases, writing clean and optimized SQL queries, and ensuring seamless data flow between the front and back end.
+
+Whether I’m creating a full-stack web app or collaborating on a larger project, I’m driven by problem-solving, clean code, and continuous learning. My goal is to build software that not only works well but adds real value.</p>
+        </div>
+
+        <div class="skills-mid">
+          <div class="skills-con">
+          <p>PYTHON</p>
+          <div class="skills-main">
+              <div class="skills python">80%</div>
+
+          </div>
+
+            <p>DJANGO</p>
+          <div class="skills-main">
+            <div class="skills django">60%</div>           
+          </div>
+
+            <p>SQL</p>
+          <div class="skills-main">
+            <div class="skills sql">80%</div>
+          </div>
+
+            <p>HTML</p>
+          <div class="skills-main">
+
+            <div class="skills html">80%</div>
+            
+          </div>
+
+            <p>CSS</p>
+          <div class="skills-main">
+            <div class="skills css">70%</div>
+            
+          </div>
+
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project" id="projects">
+      <h1 style="color: black;">My <span style="color:tomato">Projects</span> </h1>
+      <p>I’ve developed a range of web applications that showcase my skills in Python, Django, SQL, HTML, and CSS. From task managers to dynamic websites, each project reflects my focus on functionality, clean design, and real-world problem-solving.</p>
+    <div class="project2">
+
+
+      <div class="card1">
+       
+        <div class="card">
+            <img src="images/photo42.png" alt="">
+            <div class="container">
+               <h4><b>Simple Calculator</b></h4>
+                <p>HTML CSS & JS</p>
+
+             </div>
+        </div>
+      
+  
+
+       <div class="card">
+            <img src="images/photo11.png" alt="">
+            <div class="container">
+               <h4><b>dilip mishra</b></h4>
+                <p>Architect & Engineer</p>
+
+             </div>
+        </div>
+
+        </div>
+
+
+
+    <div class="card2">
+     <div class="card">
+            <img src="images/photo11.png" alt="">
+            <div class="container">
+               <h4><b>ankit Doe</b></h4>
+                <p>Architect & Engineer</p>
+
+             </div>
+        </div>
+
+        <div class="card">
+            <img src="images/photo11.png" alt="">
+            <div class="container">
+               <h4><b>mohit Doe</b></h4>
+                <p>Architect & Engineer</p>
+
+             </div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+    <div class="contact-us" id="contact">
+
+      <div class="contact-us3">
+      
+      <div class="contact-us1">
+      <h2>Get in touch</h2>
+      <p>Whether you have a project in mind, want to collaborate, or just want to say hello — I’d love to hear from you.
+          <br>Feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
+
+     
+      
+      <p><i class="fas fa-user" style="font-size: 20px;"></i>     Dilip Mishra</p>
+      
+      
+      <p style="text-align: left;"><i class="fas fa-map-marker-alt"></i>   LUCKNOW INDIA</p>
+      
+      <p style="text-align: left;"><i class="fas fa-envelope"></i>  dilipmishra2102@gmail.com</p>
+      
+      <p style="text-align: left;"><i class="fa-solid fa-phone"></i> +91 9140853014</p>
+
+      </div>
+
+      <div class="contact-us2">
+      <h2>Contact Me</h2>
+      
+      <div class="input-contact">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name"><br><br>
+      <input type="text" placeholder="Phone">
+      <input type="text" placeholder="Email"><br><br>
+      <textarea name="text" id="" placeholder="Message"></textarea>
+      <button type="button" class="btn-c1">Send</button>
+      </div>
+
+      </div>
+      </div>
+      
+
+    </div>
+
+
+    </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="footer" style="background-color: #1A1A1A;">
+    <div class="footer-content">
+    <div class="footer-f1" style="margin-top: 100px;"> <br>
+      <h3 class="footer-h3">about</h3>
+      <p class="footer-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, <br> aliquam ex beatae molestias sit laborum. Est quo reiciendis omnis dicta ullam iure libero! <br> Inventore rem nesciunt adipisci asperiores blanditiis sunt.</p>
+
+    </div>
+
+    
+    <div class="footer-f1" style="text-align: center; margin-top: 100px;" > 
+      <div class="footer-f2">
+      <h3>Usefull Link</h3>
+
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact me</a>
+      </div>
+    </div>
+
+    <div class="footer-f1" style="margin-top: 100px;">
+      
+      <h3>Contact Info</h3>
+      <h4 style="text-align: left;"><i class="fas fa-user" style="font-size: 20px;"></i> Dilip Mishra</h4>
+      <p style="text-align: left;"><i class="fas fa-map-marker-alt"></i>      LUCKNOW INDIA</p>
+      <a href="#" style="text-align: left;"><i class="fas fa-envelope"></i> dilipmishra2102@gmail.com</a>
+      <p style="text-align: left;"><i class="fa-solid fa-phone"></i> +91 9140853014</p>
+      
+    </div>
+
+    <div class="footer-f1" style="margin-top: 100px;">
+      <h3>Subscribe</h3>
+      <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <input type="text" placeholder="  Email Address"><br>
+      <button type="submit" style="text-align: left;">Submit</button>
+
+    </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="copyrights" style=" text-align: center; padding: 5px; font-size: 16px;">
+   <p class="copyrights-p">Craeted By Dilip Mishra | &COPY; 2024 All rights reserved</p>
+
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+
+      // Close menu when any nav link is clicked (especially on mobile)
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.getElementById('navLinks');
+    const links = navLinks.querySelectorAll('a');
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  });
+
+
+
+
+    function checkScroll() {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 25) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+}
+
+// Run on scroll
+window.addEventListener("scroll", checkScroll);
+
+// ✅ Also run once when the page loads
+window.addEventListener("load", checkScroll);
+
+
+
+
+
+
+  </script>
+
+    
+</body>
+</html>
